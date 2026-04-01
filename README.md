@@ -1,2 +1,21 @@
 # ShoonyaApi
-Shoonya Python Api
+# Shoonya Python Api
+##Login / Auth Flow
+# print("https://api.shoonya.com/OAuthlogin/investor-entry-level/login?api_key="+vc)
+
+from api_helper import ShoonyaApiPy
+api = ShoonyaApiPy()
+
+print(api.getOAuthURL(oauth_url="https://api.shoonya.com/OAuthlogin/authorize/oauth", api_key=vc))
+
+# Here vc is ClientID_U, pass as api_key -> Complete login on browser
+# it will redirect you with code to URL (you have given in API Key at trade.shoonya.com)
+# copy that code and paste
+
+code = input("Please enter code:")
+api.getAccessToken(authcode=code, Secret_Code=secret_key, client_id=vc, UID=client_id)
+
+# Here secret_key is from trade.shoonya.com
+
+Rest of the Doc and functions are as follows 
+https://pypi.org/project/norenrestapioauth/#description
