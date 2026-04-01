@@ -16,6 +16,7 @@ copy that code and paste
 code = input("Please enter code:")
 api.getAccessToken(authcode=code, Secret_Code=secret_key, client_id=vc, UID=client_id)
 
+print(api.get_limits())
 ```
 
 Here secret_key is from trade.shoonya.com
