@@ -1,6 +1,15 @@
 # ShoonyaApi
 # Shoonya Python Api
+
+Copy files in your project
+```
+!wget https://raw.githubusercontent.com/ramsagarmeena/ShoonyaApi/main/NorenApi.py
+!wget https://raw.githubusercontent.com/ramsagarmeena/ShoonyaApi/main/api_helper.py
+```
+
 ##Login / Auth Flow
+
+
 
 ```
 from api_helper import ShoonyaApiPy
