@@ -24,12 +24,12 @@ copy that code and paste
 
 ```
 code = input("Please enter code:")
-api.getAccessToken(authcode=code, Secret_Code=secret_key, client_id=vc, UID=client_id)
+api.getAccessToken(authcode=code, Secret_Code=secret_key, client_id=vc, UID=uid)
 
 print(api.get_limits())
 ```
 
-Here secret_key is from trade.shoonya.com
+Here secret_key is the new key we got from trade.shoonya.com, vc is like F123456_U and uid is F123456
 
 Rest of the Doc and functions are as follows 
 https://pypi.org/project/norenrestapioauth/#description
