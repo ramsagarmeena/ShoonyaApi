@@ -19,7 +19,7 @@ print(api.getOAuthURL(oauth_url="https://api.shoonya.com/OAuthlogin/authorize/oa
 ```
 Here vc is ClientID_U, pass as api_key -> Complete login on browser
 it will redirect you with code to URL (you have given in API Key at trade.shoonya.com)
-Put Redirect URL your own url, may be fake url, because https://trade.shoonya.com/OAuthlogin/ will give error
+Put Redirect URL your own url, may be dummy url https://examplenamexxxxx.com like, because https://trade.shoonya.com/OAuthlogin/ will give error
 copy that code and paste
 
 ```
